@@ -1,10 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,500&family=Roboto:wght@300;400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 :root{
@@ -14,6 +19,7 @@
   --gray: rgba(88,89,91.1);
   --light-gray-1:rgba(232, 232, 232, 1);
   --light-gray-2: rgba(247,247,247)
+
 }
 
 
