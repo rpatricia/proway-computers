@@ -49,8 +49,10 @@ nav :is(a) {
 }
 
 nav :is(a):hover {
-  background: var(--blue);
-  color: #fff;
+  /* background: var(--blue); */
+  /* color: #fff; */
+  box-shadow: 2px 2px 6px 0px rgba(29, 33, 118, .642);
+  color: var(--blue);
 }
 nav ul li a .badge-carrinho {
   background: var(--dark-blue);

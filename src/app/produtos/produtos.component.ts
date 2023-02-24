@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { produtos, IProduto } from './../produtos';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-produtos',
   templateUrl: './produtos.component.html',
   styleUrls: ['./produtos.component.css']
 })
-export class ProdutosComponent {
+export class ProdutosComponent implements OnInit {
+  produtos: IProduto[] = produtos
+  ngOnInit(): void {}
 
 }

@@ -2,7 +2,7 @@
   padding: 120px 4% 40px;
   width: fit-content;
   display: flex;
-  gap: 20px;
+  gap: 36px;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-content: center;
@@ -13,16 +13,18 @@
   box-sizing: border-box;
   padding: 10px;
   border-radius: 4px;
-  flex: 1 1 30rem;
+  flex: 0 1 16.875rem;;
   height: auto;
   background-color: white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .product-list__card:hover {
-  outline: 1px solid var(--blue);
-  transform: scale(1.1, 1.1);
+  /* outline: 1px solid var(--blue); */
+  /* transform: scale(1.1, 1.1); */
   cursor: pointer;
+  box-shadow: 2px 2px 6px 0px rgba(29, 33, 118, .642);
+  /* transform: translateY(5px); */
 }
 
 .product-list__link {
@@ -51,7 +53,7 @@
   font-weight: bold;
 }
 
-.product-item__price-deion {
+.product-item__price-description {
   color: var(--gray);
   font-size: 12px;
   font-weight: bold;
