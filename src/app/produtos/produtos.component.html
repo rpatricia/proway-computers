@@ -1,13 +1,15 @@
 <section class="product-list">
   <div class="product-list__card" *ngFor="let produto of produtos">
     <a class="product-list__link">
-      <img [src]="produto.imagem" alt="Imagens dos produtos" >
-      <h2 class="product-item__name">Produto o1</h2>
-      <p class="product-item__price">R$ 0.00</p>
-      <P class="product-item__price-description">Á vista</P>
+      <div>
+        <img [src]="produto.imagem" alt="Imagens dos produtos" />
+      </div>
+      <h2 class="product-item__name">{{ produto.descricao }}</h2>
+      <p class="product-item__price">{{ produto.preco | currency : "BRL" }}</p>
+      <P class="product-item__price-description">{{
+        produto.descricaoPreco
+      }}</P>
       <button class="product-item__buy-button">Comprar</button>
-
     </a>
-
   </div>
 </section>
