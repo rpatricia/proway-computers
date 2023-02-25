@@ -2,6 +2,7 @@ import { NaoEncontradaComponent } from './nao-encontrada/nao-encontrada.componen
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+
 const routes: Routes = [
   {
     path: 'produtos',
