@@ -8,6 +8,7 @@ import { ProdutosComponent } from "./produtos.component";
 import ptBr from "@angular/common/locales/pt";
 import { registerLocaleData } from "@angular/common";
 import { DetalhesProdutoComponent } from './detalhes-produto/detalhes-produto.component';
+import { FormsModule } from "@angular/forms";
 
 
 registerLocaleData(ptBr);
@@ -15,7 +16,7 @@ registerLocaleData(ptBr);
 
 @NgModule({
     declarations: [ProdutosComponent, DetalhesProdutoComponent],
-    imports: [CommonModule, ProdutosRoutingModule],
+    imports: [CommonModule, ProdutosRoutingModule,FormsModule],
     providers: [
         // ********************************
         { provide: LOCALE_ID, useValue: "pt" },
