@@ -7,13 +7,14 @@ import { ProdutosComponent } from "./produtos.component";
 // **********************************************
 import ptBr from "@angular/common/locales/pt";
 import { registerLocaleData } from "@angular/common";
+import { DetalhesProdutoComponent } from './detalhes-produto/detalhes-produto.component';
 
 
 registerLocaleData(ptBr);
 // **********************************************
 
 @NgModule({
-    declarations: [ProdutosComponent],
+    declarations: [ProdutosComponent, DetalhesProdutoComponent],
     imports: [CommonModule, ProdutosRoutingModule],
     providers: [
         // ********************************
