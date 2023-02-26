@@ -106,7 +106,7 @@ button:hover {
     padding-top: 120px;
   }
 }
-@media(max-width:450px) {
+@media(max-width:480px) {
   section {
     padding-top: 150;
   }
