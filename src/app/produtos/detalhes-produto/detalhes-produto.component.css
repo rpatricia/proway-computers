@@ -108,7 +108,7 @@ button:hover {
 }
 @media(max-width:480px) {
   section {
-    padding-top: 150;
+    padding-top: 150px;
   }
   button {
     width: 100%;
