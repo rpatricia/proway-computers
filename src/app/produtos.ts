@@ -33,30 +33,7 @@ export const produtos = [
     imagem: '/assets/teclado-1.jpg',
     quantidadeEstoque: 10,
   },
-  {
-    id: 3,
-    descricao: 'Teclado excelente',
-    preco: 749.99,
-    descricaoPreco: 'À vista no PIX',
-    imagem: '/assets/teclado-1.jpg',
-    quantidadeEstoque: 10,
-  },
-  {
-    id: 3,
-    descricao: 'Teclado excelente',
-    preco: 749.99,
-    descricaoPreco: 'À vista no PIX',
-    imagem: '/assets/teclado-1.jpg',
-    quantidadeEstoque: 10,
-  },
-  {
-    id: 3,
-    descricao: 'Teclado excelente',
-    preco: 749.99,
-    descricaoPreco: 'À vista no PIX',
-    imagem: '/assets/teclado-1.jpg',
-    quantidadeEstoque: 10,
-  },
+  //
   {
     id: 4,
     descricao: 'Fone para quem joga FPS',
@@ -151,6 +128,14 @@ export const produtos = [
     preco: 159.99,
     descricaoPreco: 'À vista no PIX',
     imagem: '/assets/teclado-2.jpg',
+    quantidadeEstoque: 10,
+  },
+  {
+    id: 11,
+    descricao: 'Notebook excelente',
+    preco: 4500,
+    descricaoPreco: 'À vista no PIX',
+    imagem: '/assets/laptop-2.jpg',
     quantidadeEstoque: 10,
   },
 ];
