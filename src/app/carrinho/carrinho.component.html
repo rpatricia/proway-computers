@@ -1,17 +1,18 @@
 <h2 class="cart-title">carrinho</h2>
 <div>
   <ul>
-    <li>
-      <img src="../../assets/monitor980.png" >
-      <p>Monitor</p>
-      <p>Preço: R$1300</p>
+    <li *ngFor="let itemCarrinho of itensCarrinho">
+      <img [src]="itemCarrinho.imagem" >
+      <p>{{itemCarrinho.descricao}}</p>
+      <p>Preço: {{itemCarrinho.preco}}</p>
       <Label>
         Quantidade
-        <input type="number">
+        <input type="number" [(ngModel)]="itemCarrinho.quantidade">
       </Label>
-      <button class="remove-button"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+      <button class="remove-button" (click)="carrinhoService.removerProdutoCarrinho(itemCarrinho.id)"><i class="fa-sharp fa-solid fa-xmark"></i></button>
     </li>
   </ul>
   <h2 class="cart-total">Total: R$ 1300</h2>
   <button class="buy-button">Comprar</button>
 </div>
+
