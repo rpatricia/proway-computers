@@ -1,4 +1,4 @@
-import { RouterModule} from '@angular/router';
+import { Router, RouterModule} from '@angular/router';
 import { CarrinhoService } from './../carrinho.service';
 import { IProduto, IProdutoCarrinho } from './../produtos';
 import { Component, OnInit } from '@angular/core';
@@ -13,7 +13,7 @@ export class CarrinhoComponent implements OnInit {
 
   constructor(
     public carrinhoService: CarrinhoService,
-    // private router: Router
+    private  router: Router
   ) { }
 
   ngOnInit(): void {
@@ -33,7 +33,7 @@ export class CarrinhoComponent implements OnInit {
   comprar() {
     alert("Parabéns, você finalizou a sua compra!");
     this.carrinhoService.limparCarrinho();
-    // this.router.navigate(["produtos"]);
+    this.router.navigate(["produtos"]);
   }
 
 }
