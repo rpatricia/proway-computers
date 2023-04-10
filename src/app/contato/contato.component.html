@@ -47,7 +47,7 @@
 
 
       <small class="error-message" *ngIf="formContato.controls['telefone'].hasError('minlength')">
-        Esse campo precisa de no mínimo 4 caracteres.
+        Esse campo precisa de no mínimo 11 caracteres.
       </small>
 
       <small class="error-message" *ngIf="formContato.controls['telefone'].hasError('requiredy')">
@@ -86,7 +86,7 @@
 
 
       <small class="error-message" *ngIf="formContato.controls['nome'].hasError('minlength')">
-        Esse campo precisa de no mínimo 10 caracteres.
+        Esse campo precisa de no mínimo 20 caracteres.
       </small>
 
       <small class="error-message" *ngIf="formContato.controls['nome'].hasError('requiredy')">
@@ -97,7 +97,7 @@
 
   </textarea>
 
-  <button>Enviar</button>
+  <button [disabled]="formContato.invalid">Enviar</button>
 
 </form>
 <address>
